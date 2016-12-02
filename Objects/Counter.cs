@@ -1,14 +1,22 @@
 using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 
-namespace WordCount.Objects
+namespace WordCounter.Objects
 {
-  public class Counter
+  public class UserInput
   {
-    oublic static int GetWordCount(string readString, string readWord)
+    public static int GetWordCount(string readString, string readWord)
     {
-      if (readString.ToUpper() == readWord.ToUpper)
+      int wordCount = 0;
+      string[] readWords = readString.Split();
+
+      foreach (string word in readWords)
+      {
+        if (word.ToUpper() == readWord.ToUpper())
+        {
+          wordCount++;
+        }
+      }
+      return wordCount;
     }
   }
 }
