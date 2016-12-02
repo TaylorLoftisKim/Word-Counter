@@ -1,13 +1,13 @@
-#{Word Counter}
+##Word Counter
 ===========================
 
-_{This application will allow the user to find the number of recurring words in their input.}, {December 2, 2016}_
+_This application will allow the user to find the number of recurring words in their input., December 2, 2016_
 
 _By Taylor Loftis-Kim_
 
 ##Description
 
-_{This application allows users to take a sentence or paragraph, and insert it into an input text-box. That inputted data will then be ran through to count how may times each word appeared during the test. The program will then output the data of each word and the amount of times it appeared.}_
+_This application allows users to take a sentence or paragraph, and insert it into an input text-box. That inputted data will then be ran through to count how may times each word appeared during the test. The program will then output the data of each word and the amount of times it appeared._
 
 ##Specifications
 
@@ -29,4 +29,4 @@ _Html, CSS, Bootstrap, C#, Nancy, Razor, xUnit_
 
 _Created under an MIT license._
 
-_Copyright (c) {2016} Taylor Loftis-Kim_
+_Copyright (c) 2016 Taylor Loftis-Kim_
