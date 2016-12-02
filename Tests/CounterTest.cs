@@ -1,13 +1,12 @@
 using Xunit;
 using System;
-using WordCount.Objects
+using WordCount.Objects;
 
-namespace WordCountTest
+namespace UserInputTest
 {
-  public class CounterTest
+  public class CounterTests
   {
-    [Fact]
-    public void GetWordCount_ForString_ReturnString()
-    string
+
+    }
   }
 }
