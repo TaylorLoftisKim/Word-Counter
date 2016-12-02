@@ -10,6 +10,10 @@ namespace WordCounter
 		{
 			Get["/"] = _ =>
 			{
+				Dictionary <string, string> model = new Dictionary <string, string>
+				{
+
+				};
 				return View["index.cshtml"];
 			};
 		}

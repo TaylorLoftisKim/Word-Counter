@@ -1,19 +1,15 @@
-#{Project Title}
+#{Word Counter}
 ===========================
 
-_{Brief Details}, {Date}_
+_{This application will allow the user to find the number of recurring words in their input.}, {December 2, 2016}_
 
 _By Taylor Loftis-Kim_
 
 ##Description
 
-_{Extended Details}_
-
-_[Link to site.](https://levibibo.github.io/{site-name})_
+_{This application allows users to take a sentence or paragraph, and insert it into an input text-box. That inputted data will then be ran through to count how may times each word appeared during the test. The program will then output the data of each word and the amount of times it appeared.}_
 
 ##Specifications
-
-_Specs_
 
 | Program will accept an word and output it to the user.                             | Word                                                            | Word                |
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------|---------------------|
@@ -23,14 +19,14 @@ _Specs_
 
 ##Support and contact details
 
-Check out my GitHub account: [Levi Bibo.](https://www.github.com/TaylorLoftisKim)_
+Check out my GitHub account: [Taylor Loftis-Kim.](https://www.github.com/TaylorLoftisKim)_
 
 ##Technologies used
 
-_This site was built using {technologies}_
+_Html, CSS, Bootstrap, C#, Nancy, Razor, xUnit_
 
 ##License
 
 _Created under an MIT license._
 
-_Copyright (c) {2016} Levi Bibo_
+_Copyright (c) {2016} Taylor Loftis-Kim_
