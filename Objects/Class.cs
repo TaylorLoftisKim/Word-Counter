@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace NameSpace.Objects
+namespace WordCounter.Objects
 {
-	public class NewClass
+	public class Words
 	{
 		public NewClass()
 		{

@@ -1,8 +1,8 @@
 using Nancy;
 using System.Collections.Generic;
-using NameSpace.Objects;
+using WordCounter.Objects;
 
-namespace NameSpace
+namespace Words
 {
 	public class HomeModule : NancyModule
 	{

@@ -3,7 +3,7 @@
 
 _{Brief Details}, {Date}_
 
-_By Levi Bibo_
+_By Taylor Loftis-Kim_
 
 ##Description
 
@@ -13,11 +13,11 @@ _[Link to site.](https://levibibo.github.io/{site-name})_
 
 ##Specifications
 
-*{Specs}
+_*{Specs}
 
 ##Support and contact details
 
-Check out my GitHub account: [Levi Bibo.](https://www.github.com/levibibo)
+Check out my GitHub account: [Levi Bibo.](https://www.github.com/TaylorLoftisKim)_
 
 ##Technologies used
 
