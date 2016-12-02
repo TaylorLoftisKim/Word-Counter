@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="/Content/css/styles.css">
 		<title>Word Counter</title>
 	</head>
 	<body>
@@ -13,16 +13,16 @@
 			<div class="jumbotron">
 				<form action="/" method="post">
 					<div class="row">
-						<div class="col-lg-4">
-							<label for="userInput">Insert a sentence:</label>
-							<input type="text" name="sentence" placeholder="I like coding">
+						<div class="col-md-4">
+							<label for="sentenceInput">Insert a <span><strong>sentence</strong></span>:</label>
+							<input type="text" name="sentence" placeholder="ex: I like coding">
 						</div>
-						<div class="col-lg-4">
+						<div class="col-md-4">
+							<label for="wordInput">Insert a <span><strong>word</strong></span> to search</label>
+							<input type="text" name="word" placeholder="ex: coding">
+						</div>
+						<div class="col-md-4">
 							<button type="submit">Calculate</button>
-						</div>
-						<div class="col-lg-4">
-							<label for="word">Insert a <span><strong>word</strong></span> to search</label>
-
 						</div>
 					</div>
 				</form>
