@@ -7,20 +7,20 @@ namespace WordCount.Objects
   public class Counter
   {
     private string _inputString;
-    private string _stringToReplace;
-    private string _replacementString;
+    private string _stringToCount;
+    private string _countedString;
 
-    public Counter(string newInputString, string newStringToReplace, string newReplacementString)
+    public Counter(string newInputString, string newStringToCount, string newCountedString)
     {
       _inputString = newInputString.ToLower();
-      _stringToReplace = newStringToReplace.ToLower();
-      _replacementString = newReplacementString.ToLower();
+      _stringToCount = newStringToCount.ToLower();
+      _CountedtString = newCountedString.ToLower();
     }
 
     public string FindCount()
     {
-      Regex regToReplace = new Regex(_stringToReplace);
-      string outputString = regToReplace.Replace(_inputString, _replacementString);
+      Regex regToCount = new Regex(_stringToCount);
+      string outputString = regToCount.Replace(_inputString, _CountedString);
       return outputString;
     }
   }

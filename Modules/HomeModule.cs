@@ -2,7 +2,7 @@ using Nancy;
 using System.Collections.Generic;
 using WordCounter.Objects;
 
-namespace Words
+namespace WordCount
 {
 	public class HomeModule : NancyModule
 	{
