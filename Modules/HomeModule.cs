@@ -19,8 +19,8 @@ namespace WordCounter
 				{
 					Dictionary<string, string> model = new Dictionary<string, string>();
 					model["HasResponse"] = true;
-					return View["index.cshtml" model];
-				}
+					return View["index.cshtml", model];
+				};
 			};
 		}
 	}
