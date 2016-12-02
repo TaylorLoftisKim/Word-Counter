@@ -13,7 +13,13 @@ _[Link to site.](https://levibibo.github.io/{site-name})_
 
 ##Specifications
 
-_*{Specs}
+_Specs_
+
+| Program will accept an word and output it to the user.                             | Word                                                            | Word                |
+|------------------------------------------------------------------------------------|-----------------------------------------------------------------|---------------------|
+| Program will accept a string of multiple words. (A.K.A: a sentence)                | An Example Sentence                                             | An Example Sentence |
+| Program will allow users to input a specific word to search for within the string. | EX Word: The; EX String: The man went to the store by the park; | The: true;          |
+| Program will return how many times the search word was used within the string.     | EX Word: The; EX String: The man went to the store by the park; | The: 3;             |
 
 ##Support and contact details
 
