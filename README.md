@@ -11,11 +11,12 @@ _This application allows users to take a sentence or paragraph, and insert it in
 
 ##Specifications
 
-| Program will accept an word and output it to the user.                             | Word                                                            | Word                |
-|------------------------------------------------------------------------------------|-----------------------------------------------------------------|---------------------|
-| Program will accept a string of multiple words. (A.K.A: a sentence)                | An Example Sentence                                             | An Example Sentence |
-| Program will allow users to input a specific word to search for within the string. | EX Word: The; EX String: The man went to the store by the park; | The: true;          |
-| Program will return how many times the search word was used within the string.     | EX Word: The; EX String: The man went to the store by the park; | The: 3;             |
+| Specs                               | INPUT                            | OUTPUT             |
+|-------------------------------------|----------------------------------|--------------------|
+| Get word count of single word       | Coding                           | 1                  |
+| Get word count of a sentence        | Coding is fun                    | 3                  |
+| Get word count of matched word      | Coding is fun and Coding is cool | Coding = 2 matches |
+| Get word count for no matched words | Coding is fun                    | Java = 0 matches   |
 
 ##Support and contact details
 
