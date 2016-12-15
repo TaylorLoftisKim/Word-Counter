@@ -1,4 +1,5 @@
 using Nancy;
+using System;
 using System.Collections.Generic;
 using WordCounter.Objects;
 
@@ -10,17 +11,14 @@ namespace WordCounter
 		{
 			Get["/"] = _ =>
 			{
-				{
-					Dictionary <string, string> model = new Dictionary <string, string>();
-					model["HasResponse"] = false;
-					return View["index.cshtml", model];
-				};
-				Post["/"] = _ =>
-				{
-					Dictionary<string, string> model = new Dictionary<string, string>();
-					model["HasResponse"] = true;
-					return View["index.cshtml", model];
-				};
+				return View["index.cshtml"];
+			};
+			Post["/output"] = _ =>
+			{
+				string inputSentence = Request.Form["sentenceInput"];
+				string inputWordFind = Request.Form["wordInput"];
+				WordCount newWordCount = new WordCount(inputSentence, inputWordFind);
+				return View["output.cshtml", output];
 			};
 		}
 	}
