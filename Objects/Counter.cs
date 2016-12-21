@@ -12,25 +12,28 @@ namespace WordCounter.Objects
     {
       _inputtedSentence = inputSentence;
       _inputtedWordFind = inputWordFind;
-      SentenceSplit();
     }
 
     public string GetInputtedSentence()
     {
       return _inputtedSentence;
     }
+
     public void SetInputtedSentence(string newSentence)
     {
       _inputtedSentence = newSentence;
     }
-    public string GetInputWordFind()
+
+    public string GetInputtedWordFind()
     {
       return _inputtedWordFind;
     }
+
     public void SetInputtedWordFind(string newWordFind)
     {
       _inputtedWordFind = newWordFind;
     }
+
     public void SetSentenceSplit()
     {
       _sentenceSplit = _inputtedSentence.Split(' ');
@@ -39,6 +42,7 @@ namespace WordCounter.Objects
     public int WordToNumber()
     {
       int wordAmount = 0;
+
       for (int i = 0; i < _sentenceSplit.Length; i++)
       {
         if (_sentenceSplit[i] == _inputtedWordFind)
