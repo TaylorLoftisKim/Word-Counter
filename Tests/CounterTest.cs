@@ -19,6 +19,7 @@ namespace WordCounterTests
     {
       Counter wordCounted = new Counter(inputSentence, searchedWord);
       int testWord = wordCounted.WordToNumber();
+
       Assert.Equal(testWord, wordFound);
     }
   }
