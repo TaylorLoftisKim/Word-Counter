@@ -1,29 +1,25 @@
 using Xunit;
 using WordCounter.Objects;
 
-namespace WordCounter
+namespace WordCounterTests
 {
   public class CounterTests
   {
-    [Fact]
-    public void GetWordCount_ForSingleWord_1()
+    [Theory]
+
+    [InlineData("t", "t", 1)]
+
+    [InlineData("taylor", "taylor", 1)]
+
+    [InlineData("taylor codes", "taylor", 1)]
+
+    [InlineData("Taylor writes code and he learns how to code", "code", 2)]
+
+    public void Test_CountWordInString_True(string inputSentence, string searchedWord, int wordFound)
     {
-      Assert.Equal(1, UserInput.GetWordCount("coding", "coding"));
-    }
-    [Fact]
-    public void GetWordCount_ForStringOfWords_2()
-    {
-      Assert.Equal(2, UserInput.GetWordCount("java java", "java"));
-    }
-    [Fact]
-    public void GetWordCount_ForMatchedWord_1()
-    {
-      Assert.Equal(1, UserInput.GetWordCount("coding", "coding"));
-    }
-    [Fact]
-    public void GetWordCount_ForNoMatchedWord_0()
-    {
-      Assert.Equal(0, UserInput.GetWordCount("code", "programming"));
+      Counter wordCounted = new Counter(inputSentence, searchedWord);
+      int testWord = wordCounted.WordToNumber();
+      Assert.Equal(testWord, wordFound);
     }
   }
 }

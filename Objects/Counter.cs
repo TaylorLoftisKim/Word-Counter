@@ -4,53 +4,49 @@ namespace WordCounter.Objects
 {
   public class Counter
   {
-    private string _inputSentence;
-    private string _inputWordFind;
+    private string _inputtedSentence;
+    private string _inputtedWordFind;
     private string[] _sentenceSplit;
 
-    public WordCounter(string inputSentence, string inputWordFind)
+    public Counter(string inputSentence, string inputWordFind)
     {
-      _userSentence = inputSentence.ToLower();
-      _userWordToFind = inputWordFind.ToLower();
+      _inputtedSentence = inputSentence;
+      _inputtedWordFind = inputWordFind;
       SentenceSplit();
     }
 
-    public string GetInputSentence()
+    public string GetInputtedSentence()
     {
-      return _inputSentence;
+      return _inputtedSentence;
     }
-    public void SetInputSentence(string newSentence)
+    public void SetInputtedSentence(string newSentence)
     {
-      _inputSentence = newSentence;
+      _inputtedSentence = newSentence;
     }
     public string GetInputWordFind()
     {
-      return _inputWordFind;
+      return _inputtedWordFind;
     }
-    public void SetInputWordFind(string newWordFind)
+    public void SetInputtedWordFind(string newWordFind)
     {
-      _inputWordFind = newWordFind;
+      _inputtedWordFind = newWordFind;
     }
-    public string GetSentenceSplit()
+    public void SetSentenceSplit()
     {
-      _sentenceSplit = sentenceSplit;
-    }
-    public void SetSentenceSplit(string newSentenceSplit)
-    {
-      _sentenceSplit = _inputSentence.Split(' ');
+      _sentenceSplit = _inputtedSentence.Split(' ');
     }
 
-    public int GetWordCount()
+    public int WordToNumber()
     {
-      int wordCount = 0;
-      for (int 1 = 0; i < _sentenceSplit.Length; i++)
+      int wordAmount = 0;
+      for (int i = 0; i < _sentenceSplit.Length; i++)
       {
-        if (_sentenceSplit[i] == _inputWordFind)
+        if (_sentenceSplit[i] == _inputtedWordFind)
         {
-          wordCount =+ 1;
+          wordAmount += 1;
         }
       }
-      return wordCount;
+      return wordAmount;
     }
   }
 }
