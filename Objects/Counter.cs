@@ -2,27 +2,26 @@ using System;
 
 namespace WordCounter.Objects
 {
-  public class UserInput
+  public class Counter
   {
-    private string _inputSentence
-    private string _inputWordFind
-    private string _sentenceSplit
+    private string _inputSentence;
+    private string _inputWordFind;
+    private string[] _sentenceSplit;
 
     public WordCounter(string inputSentence, string inputWordFind)
     {
-      _inputSentence = inputSentence.To.Upper();
-      _userWordToFind = inputWordFind.To.Upper();
+      _userSentence = inputSentence.ToLower();
+      _userWordToFind = inputWordFind.ToLower();
       SentenceSplit();
     }
-    
-    //Gets and Sets
+
     public string GetInputSentence()
     {
       return _inputSentence;
     }
     public void SetInputSentence(string newSentence)
     {
-      _inputSentence = newinputSentence;
+      _inputSentence = newSentence;
     }
     public string GetInputWordFind()
     {
@@ -30,7 +29,7 @@ namespace WordCounter.Objects
     }
     public void SetInputWordFind(string newWordFind)
     {
-      _inputWordFind = newinputWordFind;
+      _inputWordFind = newWordFind;
     }
     public string GetSentenceSplit()
     {
@@ -38,20 +37,17 @@ namespace WordCounter.Objects
     }
     public void SetSentenceSplit(string newSentenceSplit)
     {
-      _sentenceSplit = newsentenceSplit(" ");//Adding a space between each word
+      _sentenceSplit = _inputSentence.Split(' ');
     }
 
-    //Counter Method Begins
-    public static int GetWordCount(string readString, string readWord)
+    public int GetWordCount()
     {
       int wordCount = 0;
-      string[] readWords = readString.Split();
-
-      foreach (string word in readWords)
+      for (int 1 = 0; i < _sentenceSplit.Length; i++)
       {
-        if (word.ToUpper() == readWord.ToUpper())
+        if (_sentenceSplit[i] == _inputWordFind)
         {
-          wordCount++;
+          wordCount =+ 1;
         }
       }
       return wordCount;

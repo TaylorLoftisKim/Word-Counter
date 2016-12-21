@@ -1,11 +1,9 @@
 using Xunit;
-using System;
-using System.Collections.Generic;
-using WordCounter.Objects
+using WordCounter.Objects;
 
 namespace WordCounter
 {
-  public class UserInputTest
+  public class CounterTests
   {
     [Fact]
     public void GetWordCount_ForSingleWord_1()

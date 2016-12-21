@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using WordCounter.Objects;
 
-namespace WordCounter
+namespace Counter
 {
 	public class HomeModule : NancyModule
 	{
