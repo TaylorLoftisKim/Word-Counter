@@ -12,6 +12,7 @@ namespace WordCounter.Objects
     {
       _inputtedSentence = inputSentence;
       _inputtedWordFind = inputWordFind;
+      SetSentenceSplit();
     }
 
     public string GetInputtedSentence()
@@ -39,7 +40,7 @@ namespace WordCounter.Objects
       _sentenceSplit = _inputtedSentence.Split(' ');
     }
 
-    public int WordToNumber()
+    public int WordCount()
     {
       int wordAmount = 0;
 

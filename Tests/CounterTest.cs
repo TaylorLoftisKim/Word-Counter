@@ -15,10 +15,10 @@ namespace WordCounterTests
 
     [InlineData("Taylor writes code and he learns how to code", "code", 2)]
 
-    public void Test_CountWordInString_True(string inputSentence, string searchedWord, int wordFound)
+    public void Test_TestRepeatCounter_True(string inputSentence, string inputWordFind, int wordFound)
     {
-      Counter wordCounted = new Counter(inputSentence, searchedWord);
-      int testWord = wordCounted.WordToNumber();
+      Counter wordCounted = new Counter(inputSentence, inputWordFind);
+      int testWord = wordCounted.WordCount();
 
       Assert.Equal(testWord, wordFound);
     }

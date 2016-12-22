@@ -8,9 +8,12 @@
 	<body>
 		<div class="container">
 			<div class="jumbotron">
-				<div class="output"
-					<h1 id="header">Your Result is...</h1>
-					<h1>@Model.WordToNumber()</h1>
+				<div class="output">
+					<h1 id="header">The word you searched appeared @if(Model != null)
+					{
+						@Model
+					} times.</h1>
+
 				</div>
 			</div>
 			<h3><a href="/">Return Home</a></h3>

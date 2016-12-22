@@ -9,14 +9,12 @@ namespace WordCounter
   {
     public HomeModule()
     {
-      Get["/"] = _ => {
-        return View["index.cshtml"];
-      };
-      Post["output"] = _ =>{
-        string inputSentence = Request.Form("sentenceInput");
-        string inputWordFind = Request.Form("wordInput");
+      Get["/"] = _ => View["index.cshtml"];
+      Post["/count"] = _ =>{
+        string inputSentence = Request.Form["sentenceInput"];
+        string inputWordFind = Request.Form["wordInput"];
         Counter newCounter = new Counter(inputSentence, inputWordFind);
-        int output = newCounter.WordToNumber();
+        int output = newCounter.WordCount();
         return View["output.cshtml", output];
       };
     }
